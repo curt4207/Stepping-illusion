@@ -1,5 +1,6 @@
 function setup() {
   createCanvas(800, 650);
+  
 }
 let color1 = "white";
 let color2 = "black";
@@ -39,6 +40,10 @@ function createBars() {
     if (i % 2 === 0)
     rect(i * length, height, length, -height);
   }
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  
 }
 
 let Brick1 = new Brick(color1, 50);
